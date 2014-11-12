@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="qEj-hb-dpu">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qEj-hb-dpu" secondAttribute="trailing" id="2Q5-Bl-siL"/>
+                <constraint firstAttribute="bottom" secondItem="qEj-hb-dpu" secondAttribute="bottom" id="HCd-lQ-dhD"/>
+                <constraint firstItem="qEj-hb-dpu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Xs1-Ne-akP"/>
+                <constraint firstItem="qEj-hb-dpu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gfG-5U-Su1"/>
+                <constraint firstAttribute="trailing" secondItem="qEj-hb-dpu" secondAttribute="trailing" id="lfQ-Ee-GbS"/>
+                <constraint firstItem="qEj-hb-dpu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lpk-NQ-DeI"/>
+                <constraint firstItem="qEj-hb-dpu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="m1S-cx-7F9"/>
+                <constraint firstAttribute="bottom" secondItem="qEj-hb-dpu" secondAttribute="bottom" id="rbP-3f-Xac"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="LaunchScreen" width="640" height="960"/>
+    </resources>
+</document>

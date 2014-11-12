@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="Photog" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBar" destination="aYw-bp-EXI" id="Qc7-sy-Ze4"/>
+                <outlet property="tableView" destination="phi-pM-5Cc" id="sJo-f1-b5j"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="58" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="phi-pM-5Cc">
+                    <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="dW6-XY-FkW"/>
+                    </connections>
+                </tableView>
+                <searchBar contentMode="redraw" placeholder="Search users..." translatesAutoresizingMaskIntoConstraints="NO" id="aYw-bp-EXI">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="gmP-7g-s7l"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="1gv-3I-4fA"/>
+                    </connections>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="phi-pM-5Cc" firstAttribute="top" secondItem="aYw-bp-EXI" secondAttribute="bottom" id="0O1-30-A6v"/>
+                <constraint firstAttribute="trailing" secondItem="phi-pM-5Cc" secondAttribute="trailing" id="0fp-QD-mUw"/>
+                <constraint firstAttribute="trailing" secondItem="aYw-bp-EXI" secondAttribute="trailing" id="4u8-OR-i9X"/>
+                <constraint firstItem="aYw-bp-EXI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9GS-vf-2aU"/>
+                <constraint firstItem="phi-pM-5Cc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VtU-ob-RFE"/>
+                <constraint firstAttribute="bottom" secondItem="phi-pM-5Cc" secondAttribute="bottom" id="clQ-ur-2IE"/>
+                <constraint firstItem="aYw-bp-EXI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="u5e-NM-iH2"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
